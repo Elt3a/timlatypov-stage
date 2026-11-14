@@ -1,0 +1,37 @@
+1:"$Sreact.fragment"
+2:"static/chunks/490-aa68f5b919b62344.js"
+3:"static/chunks/159-b220085ee8ca8fdf.js"
+4:"static/chunks/332-b0462b45eceab8e5.js"
+5:"static/chunks/app/layout-2939b10d6160830d.js"
+6:I[6352,["490","$2","159","$3","332","$4","177","$5"],"default"]
+7:I[8444,["490","$2","159","$3","332","$4","177","$5"],"default"]
+8:I[3139,["490","$2","159","$3","332","$4","177","$5"],"default"]
+9:I[6564,["490","$2","159","$3","332","$4","177","$5"],"default"]
+a:I[8695,["490","$2","159","$3","332","$4","177","$5"],"default"]
+b:I[6119,["490","$2","159","$3","332","$4","177","$5"],"default"]
+c:I[7121,[],""]
+d:I[4581,[],""]
+11:I[484,[],"OutletBoundary"]
+12:"$Sreact.suspense"
+14:"ViewportBoundary"
+15:I[484,[],"$14"]
+17:"MetadataBoundary"
+18:I[484,[],"$17"]
+1a:I[7123,[],"default",1]
+:HL["/_next/static/media/0aa834ed78bf6d07-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/1e41be92c43b3255-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/4c1b5ff8ea720923-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/80841ae24d03ed90-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/bb3ef058b751a6ad-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/ef74cb41ae08e63d-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/c3a46106d6b67b41.css","style"]
+:HL["/_next/static/css/605aec9992e2f906.css","style"]
+f:X
+10:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],null,["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}],"p":false,"v":null}}]]
+e:[["children",{"s":"_not-found","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$f"},"c":"$Q10"}]]
+0:{"P":null,"c":["","_not-found",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c3a46106d6b67b41.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/605aec9992e2f906.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ru","className":"__variable_c2bf90 __variable_210a96 __variable_ea1f55","children":["$","body",null,{"className":"bg-[#080a00] text-[#d9d9d9] antialiased","children":[["$","a",null,{"href":"#main-content","className":"skip-link","children":"Перейти к содержанию"}],["$","$L6",null,{}],["$","$L7",null,{}],["$","$L8",null,{}],["$","$L9",null,{}],["$","$La",null,{"header":["$","$Lb",null,{}],"children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]}]]}],"p":false,"v":null},"c":"$Qe"},"h":{"r":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L15",null,{"children":"$L16"}],["$","$L18",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$12",null,{"name":"Next.Metadata","children":"$L19"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":false,"v":null}},"m":"$undefined","G":["$1a",[]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"jI04uJ9C2iZPjD-N6EvS1"}
+f:C
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1b:I[6869,[],"IconMark"]
+13:null
+19:[["$","title","0",{"children":"Тимур Латыпов — Продуктовый дизайнер"}],["$","meta","1",{"name":"description","content":"Продуктовый дизайнер и дизайн-инженер в E-commerce и FinTech. Сначала делал красиво, потом системно, а теперь — молниеносно. Заряжен ИИ, заземлён на результат."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","meta","3",{"name":"google-site-verification","content":"XM56tkXGJuTj2uECBx9fz_101BUZbZKKqam38nk7uIU"}],["$","meta","4",{"property":"og:title","content":"Тимур Латыпов — Продуктовый дизайнер"}],["$","meta","5",{"property":"og:description","content":"Продуктовый дизайнер и дизайн-инженер в E-commerce и FinTech. Сначала делал красиво, потом системно, а теперь — молниеносно. Заряжен ИИ, заземлён на результат."}],["$","meta","6",{"property":"og:url","content":"https://stage.timlatypov.ru/"}],["$","meta","7",{"property":"og:site_name","content":"Тимур Латыпов"}],["$","meta","8",{"property":"og:locale","content":"ru_RU"}],["$","meta","9",{"property":"og:image","content":"https://stage.timlatypov.ru/images/og-home-v2.jpg"}],["$","meta","10",{"property":"og:image:width","content":"1200"}],["$","meta","11",{"property":"og:image:height","content":"630"}],["$","meta","12",{"property":"og:image:alt","content":"Тимур Латыпов — Продуктовый дизайнер"}],["$","meta","13",{"property":"og:type","content":"website"}],["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","15",{"name":"twitter:title","content":"Тимур Латыпов — Продуктовый дизайнер"}],["$","meta","16",{"name":"twitter:description","content":"Продуктовый дизайнер и дизайн-инженер в E-commerce и FinTech. Сначала делал красиво, потом системно, а теперь — молниеносно. Заряжен ИИ, заземлён на результат."}],["$","meta","17",{"name":"twitter:image","content":"https://stage.timlatypov.ru/images/og-home-v2.jpg"}],["$","link","18",{"rel":"icon","href":"/favicon.ico?dacaa60d5f2a5cfa","type":"image/x-icon","sizes":"16x16"}],["$","link","19",{"rel":"icon","href":"/icon.svg?08727a46246cafeb","type":"image/svg+xml","sizes":"any"}],["$","link","20",{"rel":"apple-touch-icon","href":"/apple-icon.png?95506372cbcbedf9","type":"image/png","sizes":"180x180"}],["$","$L1b","21",{}]]
