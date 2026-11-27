@@ -1,0 +1,140 @@
+1:"$Sreact.fragment"
+3:"static/chunks/445-57a4416b49e6e12b.js"
+4:"static/chunks/159-b839d48ffc63faa2.js"
+5:"static/chunks/317-6bc37ebed9be7c95.js"
+6:"static/chunks/app/layout-ad208c78e5a9281c.js"
+7:I[6352,["445","$3","159","$4","317","$5","177","$6"],"default"]
+8:I[8444,["445","$3","159","$4","317","$5","177","$6"],"default"]
+9:I[3139,["445","$3","159","$4","317","$5","177","$6"],"default"]
+a:I[6564,["445","$3","159","$4","317","$5","177","$6"],"default"]
+b:I[8695,["445","$3","159","$4","317","$5","177","$6"],"default"]
+c:I[6119,["445","$3","159","$4","317","$5","177","$6"],"default"]
+d:I[7121,[],""]
+e:I[4581,[],""]
+12:"static/chunks/628-ef0855a13aa4d48c.js"
+13:"static/chunks/app/page-7708681c7117e878.js"
+14:I[2514,["628","$12","317","$5","974","$13"],"default"]
+15:I[692,["628","$12","317","$5","974","$13"],"default"]
+16:I[116,["628","$12","317","$5","974","$13"],"default"]
+17:I[610,["628","$12","317","$5","974","$13"],"default"]
+18:I[4614,["628","$12","317","$5","974","$13"],"default"]
+2b:"ViewportBoundary"
+2c:I[484,[],"$2b"]
+2d:"MetadataBoundary"
+2e:I[484,[],"$2d"]
+2f:"$Sreact.suspense"
+:HL["/_next/static/css/17112786725fc3a8.css","style"]
+:HL["/_next/static/css/51a41232e1531ed0.css","style"]
+2:T5e1,(() => {
+  if (location.pathname !== '/') return;
+  let skip = false;
+  try {
+    if (sessionStorage.getItem('hero-skip-preload') === '1') {
+      skip = true;
+      sessionStorage.removeItem('hero-skip-preload');
+    }
+  } catch {}
+  if (!skip && document.referrer) {
+    try {
+      const ref = new URL(document.referrer);
+      const nav = performance.getEntriesByType('navigation')[0];
+      const navType = nav && 'type' in nav ? nav.type : 'navigate';
+      if (ref.origin === location.origin && ref.pathname.startsWith('/cases/') && navType === 'navigate') {
+        skip = true;
+      }
+    } catch {}
+  }
+  if (!skip) return;
+  window.__heroSkipPreload = true;
+  const root = document.documentElement;
+  let done = false;
+  const apply = () => {
+    if (done) return true;
+    const pre = document.querySelector('.hero-preloader');
+    if (!pre) return false;
+    done = true;
+    pre.setAttribute('data-skip-preload', '');
+    pre.removeAttribute('data-playing');
+    const sec = pre.closest('.hero-section');
+    if (sec) {
+      sec.removeAttribute('data-preloading');
+      sec.removeAttribute('data-name-wait');
+      sec.setAttribute('data-seen', '');
+      sec.setAttribute('data-named', '');
+    }
+    return true;
+  };
+  if (apply()) return;
+  const mo = new MutationObserver(() => {
+    if (apply()) mo.disconnect();
+  });
+  mo.observe(root, { childList: true, subtree: true });
+  addEventListener('DOMContentLoaded', () => {
+    apply();
+    mo.disconnect();
+  }, { once: true });
+})()10:X
+11:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[[["$","$L14",null,{}],["$","main",null,{"id":"main-content","children":[["$","$L15",null,{}],["$","$L16",null,{}],["$","section",null,{"id":"experience","className":"experience_section__oxKoH","data-reveal-skip":true,"data-exp-scene":"","data-steps":"frame","data-steps-tick":"none","children":["$","div",null,{"className":"experience_track__p0ub8","style":{"--n":3,"--per":0.75},"children":[["$","div",null,{"className":"experience_stage__VF5oz","children":[["$","$L17",null,{}],["$","$L18",null,{"steps":[{"id":"sparklingtide","edge":"first","style":{"--a":-0.06666666666666667,"--b":0.39999999999999997,"--s0":0,"--s1":0.3333333333333333}},{"id":"white-level","edge":"mid","style":{"--a":0.26666666666666666,"--b":0.7333333333333334,"--s0":0.3333333333333333,"--s1":0.6666666666666666}},{"id":"mindbox","edge":"last","style":{"--a":0.6,"--b":1.0666666666666667,"--s0":0.6666666666666666,"--s1":1}}]}],"$L19","$L1a","$L1b","$L1c","$L1d","$L1e","$L1f","$L20"]}],"$L21",["$L22","$L23"],"$L24","$L25"]}]}]]}],"$L26"],["$L27","$L28"],"$L29"]}],"p":"$@2a","v":null,"s":"$10"}}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/17112786725fc3a8.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/51a41232e1531ed0.css","precedence":"next"}]],["$","html",null,{"lang":"ru","className":"__variable_9eecde __variable_046f51 __variable_7a575e","children":["$","body",null,{"className":"bg-[#080a00] text-[#d9d9d9] antialiased","children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],["$","a",null,{"href":"#main-content","className":"skip-link","children":"Перейти к содержанию"}],["$","$L7",null,{}],["$","$L8",null,{}],["$","$L9",null,{}],["$","$La",null,{}],["$","$Lb",null,{"header":["$","$Lc",null,{}],"children":["$","$Ld",null,{"parallelRouterKey":"children","template":["$","$Le",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}]]}]}]]}],"p":"$@f","v":null,"s":"$10"},"c":"$Q11"},"h":{"r":["$","$1","h",{"children":[null,["$","$L2c",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L2e",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$2f",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Тимур Латыпов — Продуктовый дизайнер"}],["$","meta","1",{"name":"description","content":"Продуктовый дизайнер и дизайн-инженер в E-commerce и FinTech. С помощью ИИ сам делаю работающие прототипы и проверяю на них идеи."}],"$L30","$L31","$L32","$L33","$L34","$L35","$L36","$L37","$L38","$L39","$L3a","$L3b","$L3c","$L3d","$L3e","$L3f","$L40","$L41","$L42","$L43"]}]}],null]}],"$L44"]}],"p":"$@45","v":null,"s":"$10"}},"a":"$@46","u":"$@47","b":"0XsPuCtus9AQpDWZePYfL"}
+48:"ExperienceLabBuilds"
+49:I[8273,["628","$12","317","$5","974","$13"],"$48"]
+4a:I[9434,["628","$12","317","$5","974","$13"],"default"]
+4b:I[4614,["628","$12","317","$5","974","$13"],"StepsHead"]
+4c:I[9434,["628","$12","317","$5","974","$13"],"NoiseLayer"]
+4d:I[8437,["628","$12","317","$5","974","$13"],"Image"]
+4e:I[7636,["628","$12","317","$5","974","$13"],"default"]
+4f:I[5936,["628","$12","317","$5","974","$13"],"CardGlitch"]
+50:I[4614,["628","$12","317","$5","974","$13"],"StepsScale"]
+51:I[5936,["628","$12","317","$5","974","$13"],"TextCues"]
+52:I[5936,["628","$12","317","$5","974","$13"],"CardGuard"]
+53:I[8376,["628","$12","317","$5","974","$13"],"default"]
+54:I[484,[],"OutletBoundary"]
+56:I[6869,[],"IconMark"]
+:HL["/_next/static/css/f74a2aab13d6a662.css","style"]
+:HL["/_next/static/css/0b0a87f2d768f240.css","style"]
+19:["$","$L49",null,{}]
+1a:["$","$L4a",null,{}]
+1b:["$","span",null,{"className":"experience_label__la69Q experience_col__XgvDc","children":["// Опыт работы",["$","$L4b",null,{"steps":"$11:0:1:d:r:props:children:0:1:props:children:2:props:children:props:children:0:props:children:1:props:steps"}],["$","$L4c",null,{}]]}]
+1c:["$","div",null,{"className":"experience_progress__qgLkx","children":[["$","div",null,{"className":"experience_railBody__6_sGr","children":[["$","span",null,{"className":"experience_sticks__mLKvu","aria-hidden":"true","children":[["$","span","sparklingtide",{"className":"experience_stick__Lsz2K","data-edge":"first","style":{"--a":-0.06666666666666667,"--b":0.39999999999999997}}],["$","span","white-level",{"className":"experience_stick__Lsz2K","data-edge":"mid","style":{"--a":0.26666666666666666,"--b":0.7333333333333334}}],["$","span","mindbox",{"className":"experience_stick__Lsz2K","data-edge":"last","style":{"--a":0.6,"--b":1.0666666666666667}}]]}],["$","span",null,{"className":"experience_of__ejq_F","aria-hidden":"true","children":[["$","span",null,{"className":"experience_ofNums__jiCrj","children":[["$","span","sparklingtide",{"className":"experience_ofNum__7WgEZ","data-edge":"first","style":{"--a":-0.06666666666666667,"--b":0.39999999999999997},"children":1}],["$","span","white-level",{"className":"experience_ofNum__7WgEZ","data-edge":"mid","style":{"--a":0.26666666666666666,"--b":0.7333333333333334},"children":2}],["$","span","mindbox",{"className":"experience_ofNum__7WgEZ","data-edge":"last","style":{"--a":0.6,"--b":1.0666666666666667},"children":3}]]}],["$","span",null,{"children":["из ",3]}]]}]]}],["$","$L4c",null,{}]]}]
+1d:["$","div",null,{"className":"experience_photo__WLnJT","data-reveal":true,"data-reveal-zoom":true,"children":[["$","$L4d",null,{"src":"/images/experience-portrait-center.webp","alt":"Тимур Латыпов","fill":true,"unoptimized":true,"loading":"lazy","decoding":"async","fetchPriority":"low","sizes":"(max-width: 1280px) 100vw, 80vw","className":"object-cover","style":{"objectPosition":"var(--portrait-pos)"}}],["$","$L4e",null,{}]]}]
+1e:["$","ol",null,{"className":"experience_rail__LH5S4 experience_col__XgvDc","children":[[["$","li","sparklingtide",{"className":"experience_card___oOw_","data-edge":"first","style":{"--a":-0.06666666666666667,"--b":0.39999999999999997},"children":[["$","p",null,{"className":"experience_meta__F8eU0","children":"2022"}],["$","h4",null,{"className":"experience_title__j71w3","children":"SPARKLINGTIDE"}],["$","p",null,{"className":"experience_job__d7XmQ","children":"UX/UI Designer"}],["$","p",null,{"className":"experience_desc__GKvie","children":"В аутстаффе работал в командах заказчиков над их продуктами: финансовая модель S.Finance для Самолёта, инвентаризация ИТ-инфраструктуры для Ростелекома, управление проектами Spaces."}],["$","$L4f",null,{"year":"2022","title":"SPARKLINGTIDE","role":"UX/UI Designer","desc":"В аутстаффе работал в командах заказчиков над их продуктами: финансовая модель S.Finance для Самолёта, инвентаризация ИТ-инфраструктуры для Ростелекома, управление проектами Spaces."}]]}],["$","li","white-level",{"className":"experience_card___oOw_","data-edge":"mid","style":{"--a":0.26666666666666666,"--b":0.7333333333333334},"children":[["$","p",null,{"className":"experience_meta__F8eU0","children":"2024"}],["$","h4",null,{"className":"experience_title__j71w3","children":"WHITE LEVEL"}],["$","p",null,{"className":"experience_job__d7XmQ","children":"Product Designer"}],["$","p",null,{"className":"experience_desc__GKvie","children":"Довёл до запуска MVP систему международных денежных переводов для филиалов: сценарии операциониста и HQ-офиса, требования регулятора, дизайн-система с нуля."}],["$","$L4f",null,{"year":"2024","title":"WHITE LEVEL","role":"Product Designer","desc":"Довёл до запуска MVP систему международных денежных переводов для филиалов: сценарии операциониста и HQ-офиса, требования регулятора, дизайн-система с нуля."}]]}],["$","li","mindbox",{"className":"experience_card___oOw_","data-edge":"last","style":{"--a":0.6,"--b":1.0666666666666667},"children":[["$","p",null,{"className":"experience_meta__F8eU0","children":"2025"}],["$","h4",null,{"className":"experience_title__j71w3","children":"MINDBOX"}],["$","p",null,{"className":"experience_job__d7XmQ","children":"Product Designer"}],["$","p",null,{"className":"experience_desc__GKvie","children":"CDP-платформа автоматизации маркетинга. Вёл модуль фильтрации, на котором маркетологи собирают сегменты для рассылок, — от аудита и исследования до юзабилити-тестов и передачи в разработку."}],["$","$L4f",null,{"year":"2025","title":"MINDBOX","role":"Product Designer","desc":"CDP-платформа автоматизации маркетинга. Вёл модуль фильтрации, на котором маркетологи собирают сегменты для рассылок, — от аудита и исследования до юзабилити-тестов и передачи в разработку."}]]}]],["$","$L4c",null,{"as":"li"}]]}]
+1f:["$","div",null,{"className":"experience_who__tjybT experience_col__XgvDc","children":[["$","p",null,{"className":"experience_name__Rzunx","children":"Тимур Латыпов"}],["$","p",null,{"className":"experience_role__RmImM","children":"AI-Native Product Designer"}],["$","$L4c",null,{}]]}]
+20:["$","div",null,{"className":"experience_timeline__mpn9u","aria-hidden":"true","children":[["$","span",null,{"className":"experience_line__PUacP","children":["$","span",null,{"className":"experience_fill__XLwCb"}]}],["$","$L50",null,{"steps":"$11:0:1:d:r:props:children:0:1:props:children:2:props:children:props:children:0:props:children:1:props:steps"}],["$","ol",null,{"className":"experience_marks__yDD19","children":[["$","li","sparklingtide",{"className":"experience_mark__URjuK","children":[["$","span",null,{"children":["2022"," ",["$","span",null,{"className":"experience_markName__Meg9T","children":"SPARKLINGTIDE"}]]}],["$","span",null,{"className":"experience_markOn__zm_kI","data-edge":"first","style":{"--a":-0.06666666666666667,"--b":0.39999999999999997},"children":["2022"," ",["$","span",null,{"className":"experience_markName__Meg9T","children":"SPARKLINGTIDE"}]]}]]}],["$","li","white-level",{"className":"experience_mark__URjuK","children":[["$","span",null,{"children":["2024"," ",["$","span",null,{"className":"experience_markName__Meg9T","children":"WHITE LEVEL"}]]}],["$","span",null,{"className":"experience_markOn__zm_kI","data-edge":"mid","style":{"--a":0.26666666666666666,"--b":0.7333333333333334},"children":["2024"," ",["$","span",null,{"className":"experience_markName__Meg9T","children":"WHITE LEVEL"}]]}]]}],["$","li","mindbox",{"className":"experience_mark__URjuK","children":[["$","span",null,{"children":["2025"," ",["$","span",null,{"className":"experience_markName__Meg9T","children":"MINDBOX"}]]}],["$","span",null,{"className":"experience_markOn__zm_kI","data-edge":"last","style":{"--a":0.6,"--b":1.0666666666666667},"children":["2025"," ",["$","span",null,{"className":"experience_markName__Meg9T","children":"MINDBOX"}]]}]]}]]}],["$","$L4c",null,{}]]}]
+21:["$","div",null,{"className":"experience_flood__YtSah","aria-hidden":"true","children":["$","span",null,{"className":"experience_floodFill__QAcl9"}]}]
+22:["$","span","white-level",{"className":"experience_cue__nVKhV","style":{"--k":1},"data-exp-cue":"","aria-hidden":"true"}]
+23:["$","span","mindbox",{"className":"experience_cue__nVKhV","style":{"--k":2},"data-exp-cue":"","aria-hidden":"true"}]
+24:["$","$L51",null,{"n":3}]
+25:["$","$L52",null,{"n":3}]
+26:["$","$L53",null,{}]
+27:["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f74a2aab13d6a662.css","precedence":"next"}]
+28:["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/0b0a87f2d768f240.css","precedence":"next"}]
+29:["$","$L54",null,{"children":["$","$2f",null,{"name":"Next.MetadataOutlet","children":"$@55"}]}]
+30:["$","meta","2",{"name":"robots","content":"noindex, nofollow"}]
+31:["$","meta","3",{"name":"google-site-verification","content":"XM56tkXGJuTj2uECBx9fz_101BUZbZKKqam38nk7uIU"}]
+32:["$","meta","4",{"property":"og:title","content":"Тимур Латыпов — Продуктовый дизайнер"}]
+33:["$","meta","5",{"property":"og:description","content":"Продуктовый дизайнер и дизайн-инженер в E-commerce и FinTech. С помощью ИИ сам делаю работающие прототипы и проверяю на них идеи."}]
+34:["$","meta","6",{"property":"og:url","content":"https://stage.timlatypov.ru/"}]
+35:["$","meta","7",{"property":"og:site_name","content":"Тимур Латыпов"}]
+36:["$","meta","8",{"property":"og:locale","content":"und"}]
+37:["$","meta","9",{"property":"og:image","content":"https://stage.timlatypov.ru/images/og-home-v3.jpg"}]
+38:["$","meta","10",{"property":"og:image:width","content":"1200"}]
+39:["$","meta","11",{"property":"og:image:height","content":"630"}]
+3a:["$","meta","12",{"property":"og:image:alt","content":"Тимур Латыпов — Продуктовый дизайнер"}]
+3b:["$","meta","13",{"property":"og:type","content":"website"}]
+3c:["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}]
+3d:["$","meta","15",{"name":"twitter:title","content":"Тимур Латыпов — Продуктовый дизайнер"}]
+3e:["$","meta","16",{"name":"twitter:description","content":"Продуктовый дизайнер и дизайн-инженер в E-commerce и FinTech. С помощью ИИ сам делаю работающие прототипы и проверяю на них идеи."}]
+3f:["$","meta","17",{"name":"twitter:image","content":"https://stage.timlatypov.ru/images/og-home-v3.jpg"}]
+40:["$","link","18",{"rel":"icon","href":"/favicon.ico?dacaa60d5f2a5cfa","type":"image/x-icon","sizes":"16x16"}]
+41:["$","link","19",{"rel":"icon","href":"/icon.svg?08727a46246cafeb","type":"image/svg+xml","sizes":"any"}]
+42:["$","link","20",{"rel":"apple-touch-icon","href":"/apple-icon.png?95506372cbcbedf9","type":"image/png","sizes":"180x180"}]
+43:["$","$L56","21",{}]
+44:["$","meta",null,{"name":"next-size-adjust","content":""}]
+10:300
+55:null
+47:true
+10:C
+46:0
+f:"$undefined"
+45:"$undefined"
+2a:"$undefined"

@@ -1,0 +1,559 @@
+1:"$Sreact.fragment"
+3:"static/chunks/445-57a4416b49e6e12b.js"
+4:"static/chunks/159-b839d48ffc63faa2.js"
+5:"static/chunks/317-6bc37ebed9be7c95.js"
+6:"static/chunks/app/layout-ad208c78e5a9281c.js"
+7:I[6352,["445","$3","159","$4","317","$5","177","$6"],"default"]
+8:I[8444,["445","$3","159","$4","317","$5","177","$6"],"default"]
+9:I[3139,["445","$3","159","$4","317","$5","177","$6"],"default"]
+a:I[6564,["445","$3","159","$4","317","$5","177","$6"],"default"]
+b:I[8695,["445","$3","159","$4","317","$5","177","$6"],"default"]
+c:I[6119,["445","$3","159","$4","317","$5","177","$6"],"default"]
+d:I[7121,[],""]
+e:I[4581,[],""]
+10:"static/chunks/app/cases/layout-cd7271ac943039b1.js"
+11:I[6593,["317","$5","367","$10"],"default"]
+19:"ViewportBoundary"
+1a:I[484,[],"$19"]
+1c:"MetadataBoundary"
+1d:I[484,[],"$1c"]
+1e:"$Sreact.suspense"
+20:I[7123,[],"default",1]
+:HL["/_next/static/media/0aa834ed78bf6d07-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/1e41be92c43b3255-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/4c1b5ff8ea720923-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/80841ae24d03ed90-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/bb3ef058b751a6ad-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/ef74cb41ae08e63d-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/17112786725fc3a8.css","style"]
+:HL["/_next/static/css/51a41232e1531ed0.css","style"]
+:HL["/_next/static/css/1bc2abeec5a1d694.css","style"]
+:HL["/_next/static/css/4e2d0ad8658ec11b.css","style"]
+2:T5e1,(() => {
+  if (location.pathname !== '/') return;
+  let skip = false;
+  try {
+    if (sessionStorage.getItem('hero-skip-preload') === '1') {
+      skip = true;
+      sessionStorage.removeItem('hero-skip-preload');
+    }
+  } catch {}
+  if (!skip && document.referrer) {
+    try {
+      const ref = new URL(document.referrer);
+      const nav = performance.getEntriesByType('navigation')[0];
+      const navType = nav && 'type' in nav ? nav.type : 'navigate';
+      if (ref.origin === location.origin && ref.pathname.startsWith('/cases/') && navType === 'navigate') {
+        skip = true;
+      }
+    } catch {}
+  }
+  if (!skip) return;
+  window.__heroSkipPreload = true;
+  const root = document.documentElement;
+  let done = false;
+  const apply = () => {
+    if (done) return true;
+    const pre = document.querySelector('.hero-preloader');
+    if (!pre) return false;
+    done = true;
+    pre.setAttribute('data-skip-preload', '');
+    pre.removeAttribute('data-playing');
+    const sec = pre.closest('.hero-section');
+    if (sec) {
+      sec.removeAttribute('data-preloading');
+      sec.removeAttribute('data-name-wait');
+      sec.setAttribute('data-seen', '');
+      sec.setAttribute('data-named', '');
+    }
+    return true;
+  };
+  if (apply()) return;
+  const mo = new MutationObserver(() => {
+    if (apply()) mo.disconnect();
+  });
+  mo.observe(root, { childList: true, subtree: true });
+  addEventListener('DOMContentLoaded', () => {
+    apply();
+    mo.disconnect();
+  }, { once: true });
+})()16:X
+17:[["children",{"s":"__PAGE__","h":512,"d":{"r":"$L18","p":false,"v":null}}]]
+14:[["children",{"s":"mindbox","h":512,"d":{"r":"$L15","p":false,"v":"$16"},"c":"$Q17"}]]
+f:[["children",{"s":"cases","h":512,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1bc2abeec5a1d694.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],[["$","$L11",null,{}],["$","$Ld",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Le",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}],"$L12","$L13"]]}],"p":false,"v":null},"c":"$Q14"}]]
+0:{"P":null,"c":["","cases","mindbox",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/17112786725fc3a8.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/51a41232e1531ed0.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ru","className":"__variable_9eecde __variable_046f51 __variable_7a575e","children":["$","body",null,{"className":"bg-[#080a00] text-[#d9d9d9] antialiased","children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],["$","a",null,{"href":"#main-content","className":"skip-link","children":"Перейти к содержанию"}],["$","$L7",null,{}],["$","$L8",null,{}],["$","$L9",null,{}],["$","$La",null,{}],["$","$Lb",null,{"header":["$","$Lc",null,{}],"children":["$","$Ld",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Le",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]}]]}],"p":false,"v":null},"c":"$Qf"},"h":{"r":["$","$1","h",{"children":[null,["$","$L1a",null,{"children":"$L1b"}],["$","$L1d",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$1e",null,{"name":"Next.Metadata","children":"$L1f"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":false,"v":null}},"m":"$undefined","G":["$20",[]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"0XsPuCtus9AQpDWZePYfL"}
+21:I[9332,["317","$5","367","$10"],"default"]
+22:I[6896,["317","$5","367","$10"],"default"]
+23:"static/chunks/628-ef0855a13aa4d48c.js"
+24:"static/chunks/745-f62793f281313ec9.js"
+25:"static/chunks/app/cases/mindbox/page-000e3c9838e3ca6a.js"
+26:I[3308,["628","$23","159","$4","745","$24","442","$25"],"default"]
+27:I[8500,["628","$23","159","$4","745","$24","442","$25"],""]
+28:I[3705,["628","$23","159","$4","745","$24","442","$25"],"default"]
+29:I[8437,["628","$23","159","$4","745","$24","442","$25"],"Image"]
+12:["$","$L21",null,{}]
+13:["$","$L22",null,{}]
+15:["$","$1","c",{"children":[null,["$","$Ld",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Le",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+18:["$","$1","c",{"children":[["$","div",null,{"className":"relative flex max-[1280px]:flex-col","children":[["$","main",null,{"id":"main-content","tabIndex":-1,"className":"flex-1 min-w-0 pt-[8rem] pb-16 pl-10 pr-10 max-[1280px]:pt-[3.2rem] max-[480px]:pl-5 max-[480px]:pr-5","children":[["$","$L26",null,{}],["$","div",null,{"className":"max-w-[131rem] mx-auto flex flex-col items-center gap-(--case-gap-chapter)","children":[["$","div",null,{"id":"context","className":"case-hero scroll-mt-20 flex flex-col gap-[3.2rem] max-w-[82rem]","children":[["$","div",null,{"className":"inline-flex items-center gap-[0.8rem] shadow-[0_0_0_1px_#292929] rounded-[calc(1.2_*_var(--u))] px-[2rem] py-[1.6rem] self-start font-[family-name:var(--font-roboto)]","children":[["$","$L27",null,{"href":"/","className":"flex items-center gap-[0.8rem] text-[#8c8c8c] hover:text-[#c1c1c1] transition-colors","children":[["$","svg",null,{"width":"20","height":"20","viewBox":"0 0 20 20","fill":"none","stroke":"currentColor","strokeWidth":"1.5","strokeLinecap":"round","strokeLinejoin":"round","className":"shrink-0","children":[["$","path",null,{"d":"M2.5 7.49935L10 1.66602L17.5 7.49935V16.666C17.5 17.108 17.3244 17.532 17.0118 17.8445C16.6993 18.1571 16.2754 18.3327 15.8333 18.3327H4.16667C3.72464 18.3327 3.30072 18.1571 2.98816 17.8445C2.67559 17.532 2.5 17.108 2.5 16.666V7.49935Z"}],["$","path",null,{"d":"M7.5 18.3333V10H12.5V18.3333"}]]}],["$","span",null,{"className":"text-[1.6rem] leading-[1.4]","children":"Главная"}]]}],["$","svg",null,{"width":"16","height":"16","viewBox":"0 0 16 16","fill":"none","stroke":"currentColor","strokeWidth":"1","strokeLinecap":"round","strokeLinejoin":"round","className":"text-[#a5a5a5] shrink-0","children":["$","path",null,{"d":"M6 4l4 4-4 4"}]}],["$","span",null,{"className":"text-[1.6rem] text-[#e6e6e6] leading-[1.4]","children":"Кейс Mindbox"}]]}],["$","div",null,{"className":"flex flex-col gap-[2rem]","children":[["$","h1",null,{"className":"text-[5.2rem] max-[1280px]:text-[3.8rem] max-[680px]:text-[3rem] font-semibold leading-[1.26] text-[#e6e6e6] font-[family-name:var(--font-roboto)]","children":["Конструктор условий в трекинге действий: как перевести логику"," ","БД на язык маркетолога"]}],["$","p",null,{"className":"text-[2.4rem] max-[1280px]:text-[1.9rem] font-normal leading-[1.52] text-[#a5a5a5] font-[family-name:var(--font-roboto)]","children":"Маркетологи собирали сегменты в конструкторе, который говорил языком базы данных, — и ошибались в датах. Я пересобрал его под их задачи: на тестах сложный сегмент без подсказок собрали пятеро из пяти, на старом интерфейсе — двое."}]]}]]}],["$","div",null,{"className":"w-full flex flex-col items-center gap-(--case-gap-media)","children":[["$","$L28",null,{"was":"/images/cases/mindbox/cover-wipe-was-pair.webp","wasAlt":"Прежний Mindbox: два разных конструктора дат для одной задачи — «Период от текущей даты» с полями «от … до … дней назад» и поверх него «Дата и время» с раскрытым плоским списком из десяти операторов","now":"/images/cases/mindbox/cover-wipe-now.webp","nowAlt":"Финальный конструктор условий Mindbox: табы периодов, список пресетов, календарь с подсветкой диапазона и текстовое превью границ «включительно»"}],["$","div",null,{"className":"hidden max-[1280px]:block w-full max-w-[82rem]","children":[["$","div",null,{"className":"flex items-center gap-[2rem]","children":[["$","$L29",null,{"src":"/images/cases/mindbox/icon.svg","alt":"","width":52,"height":52,"className":"shrink-0","style":{"width":"4.4rem","height":"4.4rem"}}],["$","div",null,{"className":"flex flex-col gap-[0.4rem] font-[family-name:var(--font-roboto)]","children":[["$","p",null,{"className":"text-[1.8rem] text-[#d9d9d9] leading-[1.4]","children":"Mindbox"}],["$","p",null,{"className":"text-[1.4rem] text-[#8c8c8c] leading-[1.4]","children":"Платформа автоматизации маркетинга"}]]}]]}],["$","div",null,{"className":"flex gap-[1.2rem] flex-wrap mt-[2rem] font-[family-name:var(--font-roboto)]","children":["$L2a","$L2b","$L2c"]}],"$L2d","$L2e","$L2f"]}]]}],"$L30","$L31","$L32","$L33","$L34"]}],"$L35","$L36"]}],"$L37"]}],["$L38"],"$L39"]}]
+3a:I[1153,["628","$23","159","$4","745","$24","442","$25"],"default"]
+3b:I[2587,["628","$23","159","$4","745","$24","442","$25"],"default"]
+4a:I[7159,["628","$23","159","$4","745","$24","442","$25"],"CtaTelegram"]
+4b:I[7159,["628","$23","159","$4","745","$24","442","$25"],"CtaCv"]
+4c:I[746,["628","$23","159","$4","745","$24","442","$25"],"default"]
+4e:I[484,[],"OutletBoundary"]
+16:C
+2a:["$","span","MarTech",{"className":"text-[1.3rem] leading-[1.4] text-[#c1c1c1] shadow-[0_0_0_1px_#292929] rounded-[calc(1.2_*_var(--u))] px-[1.6rem] py-[0.6rem]","children":"MarTech"}]
+2b:["$","span","B2B SaaS",{"className":"text-[1.3rem] leading-[1.4] text-[#c1c1c1] shadow-[0_0_0_1px_#292929] rounded-[calc(1.2_*_var(--u))] px-[1.6rem] py-[0.6rem]","children":"B2B SaaS"}]
+2c:["$","span","Web",{"className":"text-[1.3rem] leading-[1.4] text-[#c1c1c1] shadow-[0_0_0_1px_#292929] rounded-[calc(1.2_*_var(--u))] px-[1.6rem] py-[0.6rem]","children":"Web"}]
+2d:["$","div",null,{"className":"flex flex-col gap-[0.6rem] mt-[4rem] font-[family-name:var(--font-roboto)] leading-[1.4]","children":[["$","p",null,{"className":"text-[1.4rem] text-[#8c8c8c]","children":"Описание продукта"}],["$","p",null,{"className":"text-[1.7rem] text-[#c1c1c1]","children":"CDP для среднего и крупного B2C: объединяет данные о клиентах из онлайна и офлайна и автоматизирует коммуникации с ними."}]]}]
+2e:["$","div",null,{"className":"h-px bg-[#292929] mt-[2.8rem]"}]
+2f:["$","div",null,{"className":"mt-[2.8rem] flex flex-col gap-[2rem] font-[family-name:var(--font-roboto)]","children":[["$","div","Моя роль:",{"className":"flex flex-col gap-[0.6rem]","children":[["$","p",null,{"className":"text-[1.4rem] text-[#8c8c8c] leading-[1.4]","children":"Моя роль:"}],["$","p",null,{"className":"text-[1.7rem] text-[#c1c1c1] leading-[1.4]","children":"Продуктовый дизайнер"}]]}],["$","div","Команда:",{"className":"flex flex-col gap-[0.6rem]","children":[["$","p",null,{"className":"text-[1.4rem] text-[#8c8c8c] leading-[1.4]","children":"Команда:"}],["$","p",null,{"className":"text-[1.7rem] text-[#c1c1c1] leading-[1.4]","children":"ПМ, 2 разработчика"}]]}],["$","div","Что я делал:",{"className":"flex flex-col gap-[0.6rem]","children":[["$","p",null,{"className":"text-[1.4rem] text-[#8c8c8c] leading-[1.4]","children":"Что я делал:"}],["$","p",null,{"className":"text-[1.7rem] text-[#c1c1c1] leading-[1.4]","children":"Аудит, исследование, проектирование, UX-тесты"}]]}]]}]
+30:["$","div",null,{"id":"task","data-reveal":true,"className":"w-full max-w-[82rem] shadow-[0_0_0_1px_#292929] rounded-[calc(2.4_*_var(--u))] p-[5.6rem] max-[680px]:p-[2.8rem] flex flex-col gap-[4.8rem] max-[680px]:gap-[3.6rem] font-[family-name:var(--font-roboto)] scroll-mt-20","children":[["$","h2",null,{"className":"case-h-section","children":"Понимание задачи"}],["$","div",null,{"className":"flex flex-col gap-(--case-gap-lead)","children":[["$","div",null,{"className":"flex items-center gap-[1.2rem]","children":[["$","svg",null,{"width":"24","height":"24","viewBox":"0 0 24 24","fill":"none","className":"shrink-0","aria-hidden":"true","children":[["$","circle",null,{"cx":"12","cy":"12","r":"9.25","stroke":"#d9d9d9","strokeWidth":"1.5"}],["$","circle",null,{"cx":"12","cy":"12","r":"5.25","stroke":"#d9d9d9","strokeWidth":"1.5"}],["$","circle",null,{"cx":"12","cy":"12","r":"1.75","fill":"#d9d9d9"}]]}],["$","h3",null,{"className":"case-h-sub","children":"Задача:"}]]}],["$","p",null,{"className":"case-text","children":"Маркетологи собирают в Mindbox сегменты по датам событий — например, тех, кто бросил корзину неделю назад. Конструктор для этого говорил языком базы данных: в сегментах ошибались, а поддержка разбирала одни и те же вопросы. Переделать его нужно было, не трогая бэкенд и размер окна фильтра."}]]}],["$","div",null,{"className":"flex flex-col gap-(--case-gap-lead)","children":[["$","div",null,{"className":"flex items-center gap-[1.2rem]","children":[["$","svg",null,{"width":"24","height":"24","viewBox":"0 0 24 24","fill":"none","className":"shrink-0","aria-hidden":"true","children":[["$","path",null,{"d":"M10 6h10M10 12h10M10 18h10","stroke":"#d9d9d9","strokeWidth":"1.5","strokeLinecap":"round"}],["$","path",null,{"d":"M3.5 6l1.4 1.4L7.5 4.8M3.5 12l1.4 1.4 2.6-2.6M3.5 18l1.4 1.4 2.6-2.6","stroke":"#d9d9d9","strokeWidth":"1.5","strokeLinecap":"round","strokeLinejoin":"round"}]]}],["$","h3",null,{"className":"case-h-sub","children":"План действий:"}]]}],["$","p",null,{"className":"case-text","children":"Разобрать текущий интерфейс, тикеты поддержки, записи созвонов и аналитику, посмотреть конкурентов. Потом собрать новую структуру условия, прототип — и проверить его на маркетологах."}]]}],["$","div",null,{"className":"flex flex-col gap-(--case-gap-lead)","children":[["$","div",null,{"className":"flex items-center gap-[1.2rem]","children":[["$","svg",null,{"width":"24","height":"24","viewBox":"0 0 24 24","fill":"none","className":"shrink-0","aria-hidden":"true","children":[["$","path",null,{"d":"M5.5 21V3.5","stroke":"#d9d9d9","strokeWidth":"1.5","strokeLinecap":"round"}],["$","path",null,{"d":"M5.5 4.2c2.4-1.4 4.8-1.4 7 0 2.2 1.4 4.6 1.4 7 0v9c-2.4 1.4-4.8 1.4-7 0-2.2-1.4-4.6-1.4-7 0z","fill":"#d9d9d9"}]]}],["$","h3",null,{"className":"case-h-sub","children":"Цель:"}]]}],["$","p",null,{"className":"case-text","children":"Меньше ошибок в сегментах и обращений в поддержку о датах. До релиза — убедиться на тестах, что сложный сегмент собирают быстрее и без подсказок."}]]}]]}]
+31:["$","div",null,{"className":"w-full flex flex-col items-center gap-(--case-gap-block)","children":[["$","div",null,{"id":"research","className":"case-chapter-head w-full flex flex-col gap-(--case-gap-heading) max-w-[82rem] font-[family-name:var(--font-roboto)] scroll-mt-20","children":["$","h2",null,{"className":"case-h-chapter","children":"Этап 1 · Исследование"}]}],["$","div",null,{"id":"audit","className":"flex flex-col gap-(--case-gap-media) case-group font-[family-name:var(--font-roboto)] scroll-mt-20","children":[["$","div",null,{"className":"case-col flex flex-col gap-(--case-gap-heading)","children":[["$","h3",null,{"className":"case-h-section","children":"Аудит интерфейса"}],["$","p",null,{"className":"case-text","children":["Я прошёл путь маркетолога по текущему интерфейсу и собрал карту всех экранов и состояний. Оказалось, что это не один конструктор, а пять параллельных — у каждого своя логика. Условие собирали из выпадающих списков с техническими словами: «заполнен"," ","и» → «наступит» → «более» → «чем через 0"," ","дней»."]}]]}],["$","$L3a",null,{"narrow":true,"alt":"Проблема — технический нейминг оператора, аннотация: формулировки не соответствуют языку пользователя","className":"rounded-[calc(2.4_*_var(--u))] w-full aspect-[1310/766]","src":"/images/cases/mindbox/2problem.png","caption":"Здесь и далее скриншоты интерфейса сняты на демо-стенде платформы — данные в таблицах синтетические"}],["$","$L3b",null,{"label":"Раскрыть детали аудита","collapseLabel":"Свернуть детали аудита","children":[["$","div",null,{"className":"w-full flex flex-col items-center gap-(--case-gap-media)","children":[["$","div",null,{"className":"case-col flex flex-col gap-(--case-gap-heading)","children":[["$","h4",null,{"className":"case-h-sub","children":"Карта экранов AS IS"}],["$","p",null,{"className":"case-text","children":"Все состояния каждого конструктора, ветки и переходы — пять систем, которые делают похожую работу по-разному."}]]}],["$","$L3a",null,{"narrow":true,"alt":"Карта экранов AS IS — структура пяти параллельных конструкторов дат","className":"rounded-[calc(2.4_*_var(--u))] w-full aspect-[1310/1070]","src":"/images/cases/mindbox/asis-v2.png"}]]}],["$","div",null,{"className":"w-full flex flex-col items-center gap-(--case-gap-media)","children":[["$","div",null,{"className":"case-col flex flex-col gap-(--case-gap-heading)","children":[["$","h4",null,{"className":"case-h-sub","children":"Нет иерархии операторов"}],["$","p",null,{"className":"case-text","children":"Все операторы — в одном плоском списке: «наступит», «наступила» и три вида годовщины стоят рядом как равные, частые не отделены от редких."}]]}],["$","$L3a",null,{"narrow":true,"alt":"Плоский список операторов без группировки, аннотация: нет разделения на важные и второстепенные условия","className":"rounded-[calc(2.4_*_var(--u))] w-full aspect-[1310/766]","src":"/images/cases/mindbox/1problem.png"}]]}],["$","div",null,{"className":"w-full flex flex-col items-center gap-(--case-gap-media)","children":[["$","div",null,{"className":"case-col flex flex-col gap-(--case-gap-heading)","children":[["$","h4",null,{"className":"case-h-sub","children":"Не видно, что попадёт в выборку"}],["$","p",null,{"className":"case-text","children":"После «в диапазоне» или «от–до» интерфейс не показывал, какие даты получились: ни подсказки, ни календаря."}]]}],["$","$L3a",null,{"narrow":true,"alt":"Нет визуального подтверждения дат при вводе диапазона","className":"rounded-[calc(2.4_*_var(--u))] w-full aspect-[1310/766]","src":"/images/cases/mindbox/3problem.png"}]]}],["$","div",null,{"className":"w-full flex flex-col items-center gap-(--case-gap-media)","children":[["$","div",null,{"className":"case-col flex flex-col gap-(--case-gap-heading)","children":[["$","h4",null,{"className":"case-h-sub","children":"Похожие конструкторы в разных местах"}],["$","p",null,{"className":"case-text","children":"Часть фильтров дублировала друг друга, но жила в разных частях интерфейса — где какой, приходилось помнить."}]]}],"$L3c"]}]]}]]}],"$L3d","$L3e"]}]
+32:["$","div",null,{"className":"w-full flex flex-col items-center gap-(--case-gap-block)","children":[["$","div",null,{"id":"solution","className":"w-full flex flex-col gap-(--case-gap-heading) max-w-[82rem] font-[family-name:var(--font-roboto)] scroll-mt-20","children":[["$","h2",null,{"className":"case-h-chapter","children":"Этап 2 · Решение"}],["$","p",null,{"className":"case-text","children":["Маркетолог думает задачей — «кто бросил корзину неделю назад», — а интерфейс заставлял переводить её на язык базы. Ключевая гипотеза: ",["$","b",null,{"className":"font-semibold","children":"если"}]," условие будет читаться фразой на языке маркетолога, а выбранный период сразу виден,"," ",["$","b",null,{"className":"font-semibold","children":"то"}]," ошибок в сегментах и тикетов станет меньше, ",["$","b",null,{"className":"font-semibold","children":"потому что"}]," не придётся переводить задачу и считать даты в уме."]}]]}],["$","div",null,{"id":"architecture","className":"flex flex-col gap-(--case-gap-media) case-group font-[family-name:var(--font-roboto)] scroll-mt-20","children":[["$","div",null,{"className":"case-col flex flex-col gap-(--case-gap-heading)","children":[["$","h3",null,{"className":"case-h-section","children":"Структура условия"}],["$","p",null,{"className":"case-text","children":"До экранов я описал объекты системы — сегмент, событие, условие — и связи между ними. Главная находка: условие — не десяток разных экранов, а одна форма, которая меняется от выбора. Выбор идёт в три шага, и каждый задаёт следующий."}]]}],["$","ol",null,{"className":"case-col grid grid-cols-3 max-[680px]:grid-cols-1 gap-(--case-gap-pair)","children":[["$","li","Тип отсчёта",{"data-reveal":true,"className":"rounded-[calc(1.6_*_var(--u))] bg-[#1c1c1c] p-[2.4rem] max-[680px]:p-[2rem] flex flex-col gap-[0.8rem]","children":[["$","span",null,{"className":"text-[1.4rem] font-medium leading-[1.4] text-[#8c8c8c] tabular-nums","children":["Шаг ",1]}],["$","span",null,{"className":"text-[1.9rem] max-[680px]:text-[1.7rem] font-semibold leading-[1.4] text-[#d9d9d9]","children":"Тип отсчёта"}],["$","span",null,{"className":"case-text-sm","children":"от «сейчас» или точные даты"}]]}],["$","li","Оператор",{"data-reveal":true,"className":"rounded-[calc(1.6_*_var(--u))] bg-[#1c1c1c] p-[2.4rem] max-[680px]:p-[2rem] flex flex-col gap-[0.8rem]","children":[["$","span",null,{"className":"text-[1.4rem] font-medium leading-[1.4] text-[#8c8c8c] tabular-nums","children":["Шаг ",2]}],["$","span",null,{"className":"text-[1.9rem] max-[680px]:text-[1.7rem] font-semibold leading-[1.4] text-[#d9d9d9]","children":"Оператор"}],["$","span",null,{"className":"case-text-sm","children":"«Прошло более», «Наступит через», «Следующие», «Предыдущие»; для календаря — «Календарный период»"}]]}],["$","li","Значение",{"data-reveal":true,"className":"rounded-[calc(1.6_*_var(--u))] bg-[#1c1c1c] p-[2.4rem] max-[680px]:p-[2rem] flex flex-col gap-[0.8rem]","children":[["$","span",null,{"className":"text-[1.4rem] font-medium leading-[1.4] text-[#8c8c8c] tabular-nums","children":["Шаг ",3]}],["$","span",null,{"className":"text-[1.9rem] max-[680px]:text-[1.7rem] font-semibold leading-[1.4] text-[#d9d9d9]","children":"Значение"}],["$","span",null,{"className":"case-text-sm","children":"число или диапазон; единица — минуты, часы, дни, недели…"}]]}]]}],["$","$L3b",null,{"label":"Раскрыть схемы","collapseLabel":"Свернуть схемы","children":[["$","div",null,{"className":"w-full flex flex-col items-center gap-(--case-gap-media)","children":[["$","div",null,{"className":"case-col flex flex-col gap-(--case-gap-heading)","children":[["$","h4",null,{"className":"case-h-sub","children":"Объектная модель"}],["$","p",null,{"className":"case-text","children":"Условие живёт внутри сегмента и опирается на событие. Клиента как результат срабатывания я вынес за рамки: проектировал правило, а не его исполнение."}]]}],"$L3f"]}],"$L40","$L41"]}]]}],"$L42","$L43","$L44"]}]
+33:["$","div",null,{"className":"w-full flex flex-col items-center gap-(--case-gap-block)","children":[["$","div",null,{"id":"testing","className":"case-chapter-head w-full flex flex-col gap-(--case-gap-heading) max-w-[82rem] font-[family-name:var(--font-roboto)] scroll-mt-20","children":["$","h2",null,{"className":"case-h-chapter","children":"Этап 3 · Проверка"}]}],["$","div",null,{"id":"ux-testing","className":"flex flex-col gap-(--case-gap-media) case-group font-[family-name:var(--font-roboto)] scroll-mt-20","children":[["$","div",null,{"className":"case-col flex flex-col gap-(--case-gap-heading)","children":[["$","h3",null,{"className":"case-h-section","children":"Юзабилити-тесты"}],["$","div",null,{"className":"case-text flex flex-col gap-(--case-gap-text)","children":[["$","p",null,{"children":"Я провёл модерируемые тесты с пятью маркетологами: сначала задачи на старом интерфейсе, потом те же — на прототипе. Задачи — сквозные, например «выгрузить тех, кто бросил корзину за последние 7 дней, но исключить купивших вчера»."}],["$","p",null,{"children":"В первом прогоне я пошёл дальше гипотезы и убрал операторы совсем, оставив одну форму «От… до…», — на ней участники и застревали. Во второй итерации операторы вернулись — с новыми названиями и диапазоном внутри, — превью стало подробнее, и верный сегмент без подсказок собрали пятеро из пяти."}]]}]]}],["$","div",null,{"className":"case-col flex flex-col gap-(--case-gap-pair)","children":[["$","div",null,{"className":"grid grid-cols-2 max-[680px]:grid-cols-1 gap-(--case-gap-pair)","children":[["$","div","Успешность задачи (Task Success)",{"data-reveal":true,"className":"bg-[#1c1c1c] rounded-[calc(1.2_*_var(--u))] p-[2.8rem] min-h-[22rem] flex flex-col justify-between gap-[1.6rem]","children":[["$","p",null,{"className":"text-[1.6rem] font-medium leading-[1.4] text-[#a5a5a5]","children":"Успешность задачи (Task Success)"}],["$","div",null,{"className":"flex flex-col gap-[0.8rem]","children":[["$","p",null,{"className":"text-[2.4rem] font-medium text-[#e6e6e6] leading-[1.3]","children":["2 из 5 → 5 из 5",["$","a",null,{"href":"#measurement-limits","className":"text-[#a5a5a5] hover:text-[#e6e6e6] transition-colors ml-[0.2rem] align-super text-[1.6rem]","aria-label":"Почему эта цифра — верхняя граница эффекта, а не чистый вклад интерфейса","children":"*"}]]}],["$","p",null,{"className":"text-[1.6rem] font-medium leading-[1.5] text-[#a5a5a5]","children":"собрали верный сегмент без подсказок"}]]}]]}],["$","div","Время настройки (Time on Task)",{"data-reveal":true,"className":"bg-[#1c1c1c] rounded-[calc(1.2_*_var(--u))] p-[2.8rem] min-h-[22rem] flex flex-col justify-between gap-[1.6rem]","children":[["$","p",null,{"className":"text-[1.6rem] font-medium leading-[1.4] text-[#a5a5a5]","children":"Время настройки (Time on Task)"}],["$","div",null,{"className":"flex flex-col gap-[0.8rem]","children":[["$","p",null,{"className":"text-[2.4rem] font-medium text-[#e6e6e6] leading-[1.3]","children":["107 сек → 38 сек",["$","a",null,{"href":"#measurement-limits","className":"text-[#a5a5a5] hover:text-[#e6e6e6] transition-colors ml-[0.2rem] align-super text-[1.6rem]","aria-label":"Почему эта цифра — верхняя граница эффекта, а не чистый вклад интерфейса","children":"*"}]]}],["$","p",null,{"className":"text-[1.6rem] font-medium leading-[1.5] text-[#a5a5a5]","children":"среднее время сборки сложного сегмента"}]]}]]}]]}],["$","p",null,{"id":"measurement-limits","className":"text-[1.6rem] leading-[1.6] text-[#a5a5a5] scroll-mt-20","children":"* Пять человек — сигнал, а не статистика. Порядок у всех один — сначала старый интерфейс, — и модератором был я сам, поэтому оба результата — верхняя граница эффекта."}]]}],["$","$L3b",null,{"label":"Раскрыть ход тестов","collapseLabel":"Свернуть ход тестов","children":[["$","div",null,{"className":"w-full flex flex-col items-center gap-(--case-gap-media)","children":["$L45","$L46"]}],"$L47","$L48"]}]]}],"$L49"]}]
+34:["$","div",null,{"className":"w-full flex flex-col items-center gap-(--case-gap-block)","children":[["$","div",null,{"id":"results","className":"case-chapter-head w-full flex flex-col gap-(--case-gap-heading) max-w-[82rem] font-[family-name:var(--font-roboto)] scroll-mt-20","children":[["$","h2",null,{"className":"case-h-chapter","children":"Итоги"}],["$","p",null,{"className":"case-text","children":"На тестах сложный сегмент без подсказок собрали пятеро из пяти — на старом интерфейсе двое. До релиза я ушёл из компании, и сравнение обращений в поддержку осталось за командой."}]]}],["$","div",null,{"id":"learnings","className":"flex flex-col gap-(--case-gap-heading) max-w-[82rem] w-full font-[family-name:var(--font-roboto)] scroll-mt-20","children":[["$","h3",null,{"className":"case-h-section","children":"Чему научился"}],["$","ul",null,{"className":"case-text list-disc ml-6 flex flex-col gap-(--case-gap-text)","children":[["$","li",null,{"children":"Тикеты — симптом не только названий, но и архитектуры: пять параллельных конструкторов я увидел только на карте экранов."}],["$","li",null,{"children":"Модель объектов окупается до экранов: «условие» оказалось одной формой, а не десятком макетов."}],["$","li",null,{"children":"Дорогие идеи — разработчикам на этапе эскиза. Таймлайн я принёс им уже проработанным — и только тогда узнал, что к релизу он не успевает."}],["$","li",null,{"children":"Малая доля в аналитике — ещё не ненужность. Годовщины я убрал как редкие, а 83% из них — поздравления с днём рождения."}]]}]]}]]}]
+35:["$","section",null,{"aria-labelledby":"case-footer-title","data-case-foot":"","className":"case-foot case-col mx-auto my-(--case-gap-block) rounded-[calc(2.4_*_var(--u))] shadow-[0_0_0_1px_#292929] bg-(--case-surface) p-[4.8rem] max-[680px]:p-[2.4rem] flex flex-col gap-[4rem] max-[680px]:gap-[3.2rem]","children":[["$","div",null,{"className":"flex flex-col gap-[1.6rem]","children":[["$","p",null,{"className":"font-[family-name:var(--font-mono)] text-[1.4rem] uppercase tracking-[0.06em] text-[#8c8c8c]","children":"Спасибо, что дочитали"}],["$","h2",null,{"id":"case-footer-title","className":"m-0 flex flex-col font-[family-name:var(--font-jura)] font-bold uppercase text-[4rem] leading-[1.15] tracking-[-0.01em] max-[1280px]:text-[3.2rem] max-[680px]:text-[2.4rem]","children":[["$","span",null,{"className":"text-[#8c8c8c]","children":"Создаёте продукт?"}],["$","span",null,{"className":"text-[#f2f2f2]","children":"Давайте делать вместе."}]]}]]}],["$","div",null,{"className":"flex flex-wrap gap-[1.2rem] max-[680px]:flex-col max-[680px]:*:w-full","children":[["$","$L4a",null,{"label":"Написать в Телеграм"}],["$","$L4b",null,{}]]}]]}]
+36:["$","div",null,{"data-case-end":true,"aria-hidden":"true","className":"h-px"}]
+37:["$","aside",null,{"className":"w-(--case-aside-w) shrink-0 border-l border-[#1f1f1f] px-[3.2rem] pt-[8rem] max-[1280px]:w-full max-[1280px]:border-l-0 max-[1280px]:border-t max-[1280px]:px-10 max-[1280px]:pt-[6rem] max-[1280px]:pb-[6rem] max-[480px]:px-5","children":[["$","div",null,{"className":"max-[1280px]:hidden","children":[[["$","div",null,{"className":"flex items-center gap-[2rem]","children":[["$","$L29",null,{"src":"/images/cases/mindbox/icon.svg","alt":"","width":52,"height":52,"className":"shrink-0","style":{"width":"4.4rem","height":"4.4rem"}}],["$","div",null,{"className":"flex flex-col gap-[0.4rem] font-[family-name:var(--font-roboto)]","children":[["$","p",null,{"className":"text-[1.8rem] text-[#d9d9d9] leading-[1.4]","children":"Mindbox"}],["$","p",null,{"className":"text-[1.4rem] text-[#8c8c8c] leading-[1.4]","children":"Платформа автоматизации маркетинга"}]]}]]}],["$","div",null,{"className":"flex gap-[1.2rem] flex-wrap mt-[2rem] font-[family-name:var(--font-roboto)]","children":[["$","span","MarTech",{"className":"text-[1.3rem] leading-[1.4] text-[#c1c1c1] shadow-[0_0_0_1px_#292929] rounded-[calc(1.2_*_var(--u))] px-[1.6rem] py-[0.6rem]","children":"MarTech"}],["$","span","B2B SaaS",{"className":"text-[1.3rem] leading-[1.4] text-[#c1c1c1] shadow-[0_0_0_1px_#292929] rounded-[calc(1.2_*_var(--u))] px-[1.6rem] py-[0.6rem]","children":"B2B SaaS"}],["$","span","Web",{"className":"text-[1.3rem] leading-[1.4] text-[#c1c1c1] shadow-[0_0_0_1px_#292929] rounded-[calc(1.2_*_var(--u))] px-[1.6rem] py-[0.6rem]","children":"Web"}]]}],["$","div",null,{"className":"flex flex-col gap-[0.6rem] mt-[4rem] font-[family-name:var(--font-roboto)] leading-[1.4]","children":[["$","p",null,{"className":"text-[1.4rem] text-[#8c8c8c]","children":"Описание продукта"}],["$","p",null,{"className":"text-[1.7rem] text-[#c1c1c1]","children":"CDP для среднего и крупного B2C: объединяет данные о клиентах из онлайна и офлайна и автоматизирует коммуникации с ними."}]]}],["$","div",null,{"className":"h-px bg-[#292929] mt-[2.8rem]"}],["$","div",null,{"className":"mt-[2.8rem] flex flex-col gap-[2rem] font-[family-name:var(--font-roboto)]","children":[["$","div","Моя роль:",{"className":"flex flex-col gap-[0.6rem]","children":[["$","p",null,{"className":"text-[1.4rem] text-[#8c8c8c] leading-[1.4]","children":"Моя роль:"}],["$","p",null,{"className":"text-[1.7rem] text-[#c1c1c1] leading-[1.4]","children":"Продуктовый дизайнер"}]]}],["$","div","Команда:",{"className":"flex flex-col gap-[0.6rem]","children":[["$","p",null,{"className":"text-[1.4rem] text-[#8c8c8c] leading-[1.4]","children":"Команда:"}],["$","p",null,{"className":"text-[1.7rem] text-[#c1c1c1] leading-[1.4]","children":"ПМ, 2 разработчика"}]]}],["$","div","Что я делал:",{"className":"flex flex-col gap-[0.6rem]","children":[["$","p",null,{"className":"text-[1.4rem] text-[#8c8c8c] leading-[1.4]","children":"Что я делал:"}],["$","p",null,{"className":"text-[1.7rem] text-[#c1c1c1] leading-[1.4]","children":"Аудит, исследование, проектирование, UX-тесты"}]]}]]}]],["$","div",null,{"className":"h-px bg-[#292929] mt-[4rem]"}]]}],["$","div",null,{"className":"sticky sticky-under-header case-aside-sticky max-[1280px]:static pt-[2.4rem] pb-[2.4rem] bg-[#080a00] flex flex-col gap-[1.6rem]","children":[["$","div",null,{"className":"max-[1280px]:hidden","children":["$","$L4c",null,{"groups":[{"id":"context","label":"Контекст","items":[{"id":"task","label":"Понимание задачи"}]},{"id":"research","label":"Исследование","items":[{"id":"audit","label":"Аудит интерфейса"},{"id":"users","label":"Тикеты, созвоны и аналитика"},{"id":"competitors","label":"Анализ конкурентов"}]},{"id":"solution","label":"Решение","items":[{"id":"architecture","label":"Структура условия"},{"id":"changes","label":"Гипотезы и решения"},{"id":"tried","label":"Что ещё пробовал"},{"id":"scoping","label":"MVP и V2"}]},{"id":"testing","label":"Проверка","items":[{"id":"ux-testing","label":"Юзабилити-тесты"},{"id":"handoff","label":"Передача в разработку"}]},{"id":"results","label":"Итоги","items":[{"id":"learnings","label":"Чему научился"}]}]}]}],"$L4d"]}]]}]
+38:["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4e2d0ad8658ec11b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+39:["$","$L4e",null,{"children":["$","$1e",null,{"name":"Next.MetadataOutlet","children":"$@4f"}]}]
+50:I[1707,["628","$23","159","$4","745","$24","442","$25"],"default"]
+56:I[6111,["628","$23","159","$4","745","$24","442","$25"],"HypothesesMore"]
+57:I[1988,["628","$23","159","$4","745","$24","442","$25"],"default"]
+3c:["$","$L3a",null,{"narrow":true,"alt":"Дублирующие конструкторы дат в разных частях интерфейса, аннотация: объединить в один конструктор","className":"rounded-[calc(2.4_*_var(--u))] w-full aspect-[1310/766]","src":"/images/cases/mindbox/4problem.png"}]
+3d:["$","div",null,{"id":"users","className":"flex flex-col gap-(--case-gap-media) case-group font-[family-name:var(--font-roboto)] scroll-mt-20","children":[["$","div",null,{"className":"case-col flex flex-col gap-(--case-gap-heading)","children":[["$","h3",null,{"className":"case-h-section","children":"Тикеты, созвоны и аналитика"}],["$","div",null,{"className":"case-text flex flex-col gap-(--case-gap-text)","children":[["$","p",null,{"children":"Я разобрал около 40 тикетов поддержки за полгода, 6 записей созвонов с пользователями и прошлые исследования. Задачи маркетологов распались на три типа отсчёта: от «сейчас», по календарю и по точным датам. На этом делении потом построены табы и операторы."}],["$","p",null,{"children":"Ошибались в двух местах: путали «последние 30 дней» с календарным месяцем и считали даты в уме или на бумажке — интерфейс не показывал итог. Аналитика добавила масштаб: два сценария закрывают 95% использований, а редкие условия вместе не набирают и 4%."}]]}]]}],["$","$L3a",null,{"narrow":true,"alt":"Переписка с поддержкой: маркетолог путается в условии из-за технического названия поля","className":"rounded-[calc(2.4_*_var(--u))] w-full aspect-[820/618]","src":"/images/cases/mindbox/ticket.png","caption":"Один из тикетов в поддержку"}],["$","$L3b",null,{"label":"Раскрыть детали исследования","collapseLabel":"Свернуть детали исследования","children":[["$","div",null,{"className":"case-col flex flex-col gap-(--case-gap-heading)","children":[["$","h4",null,{"className":"case-h-sub","children":"Job Stories"}],["$","div",null,{"className":"flex flex-col gap-(--case-gap-text)","children":[["$","p",null,{"className":"case-text","children":"Задачи из тикетов и созвонов — по трём типам отсчёта."}],["$","$L50",null,{"groups":[{"group":"Относительные периоды — отсчёт от «сейчас»","visible":["Когда клиент не делал заказ больше 30 дней, я хочу отфильтровать таких «спящих» пользователей, чтобы запустить по ним реанимационную рассылку со скидкой.","Когда пользователь бросил корзину, я хочу собрать тех, у кого с этого момента прошло от 3 до 7 дней, чтобы поймать момент, когда напоминание сработает лучше всего."],"rest":["Когда у клиента сгорают бонусные баллы через 7 дней, я хочу собрать его в сегмент, чтобы отправить пуш «Потратьте баллы, пока не сгорели».","Когда у клиента в следующие 7 дней истекает гарантия на товар, я хочу собрать сегмент, чтобы предложить продление заранее.","Когда клиент открывал рассылку в предыдущие 30 дней, я хочу собрать активную аудиторию, чтобы запустить по ней допродажу.","Когда пользователь положил товар в корзину и ушёл, я хочу собрать тех, у кого с этого момента прошло более 30 минут и заказ не оформлен, чтобы отправить пуш, пока интерес ещё горячий.","Когда мне снова и снова нужны вовлечённые клиенты за последние 90 дней, я хочу брать этот период готовым, чтобы не набирать одно и то же каждый раз.","Когда мне нужны клиенты в узком временном окне, я хочу собрать тех, кому отправили рассылку более 3, но менее 7 дней назад, чтобы попасть в нужный момент коммуникации."]},{"group":"Календарные периоды","visible":["Когда я оцениваю отклик на акцию, я хочу собрать клиентов, получивших рассылку на прошлой календарной неделе (пн–вс), чтобы измерить эффект именно за тот период, а не за «последние 7 дней».","Когда наступает первое число, я хочу собрать пользователей, совершивших покупки за весь прошлый календарный месяц, чтобы начислить им кэшбэк."],"rest":["Когда идёт текущая неделя, я хочу собрать всех клиентов, совершивших действие на этой неделе (с понедельника), чтобы подвести промежуточный итог по живой кампании.","Когда начнётся следующий месяц, я хочу заранее собрать клиентов, у которых в следующем месяце истекает подписка, чтобы спланировать кампанию продления.","Когда заканчивается календарный год, я хочу собрать всех клиентов за весь прошлый год, чтобы сделать годовой отчёт и новогоднюю кампанию."]},{"group":"Абсолютные даты и границы диапазона","visible":["Когда я подвожу итоги распродажи, я хочу выбрать клиентов, открывавших рассылки строго с 1 по 31 августа, и видеть, включён ли последний день целиком, чтобы не потерять и не захватить лишний день на границе.","Когда я готовлю отчёт по завершённой кампании, я хочу зафиксировать период жёсткими датами, чтобы через неделю тот же сегмент дал те же цифры, а не сполз вместе с «сегодня»."],"rest":["Когда акция стартовала в 12:30, а не в полночь, я хочу задать начало периода с точностью до минуты, чтобы в выборку не попали заказы, сделанные утром до её старта.","Когда я сравниваю распродажу с прошлогодней, я хочу выбрать ту же неделю год назад по конкретным датам, чтобы сопоставить отклик двух кампаний на одинаковом отрезке."]}]}]]}]]}],"$L51","$L52"]}]]}]
+3e:["$","div",null,{"id":"competitors","className":"flex flex-col gap-(--case-gap-media) case-group font-[family-name:var(--font-roboto)] scroll-mt-20","children":[["$","div",null,{"className":"case-col flex flex-col gap-(--case-gap-heading)","children":[["$","h3",null,{"className":"case-h-section","children":"Анализ конкурентов"}],["$","div",null,{"className":"case-text flex flex-col gap-(--case-gap-text)","children":[["$","p",null,{"children":"Я посмотрел, как период задают в Google Analytics, Mixpanel, Bloomreach, HubSpot, Airbnb и Notion. Взял три приёма: относительные и абсолютные периоды разведены, операторы названы человеческими словами, а выбранный диапазон подсвечен в календаре и подписан текстом."}],["$","p",null,{"children":"Минут и часов толком нет ни у кого из них — логика начинается с дней. Для триггерных рассылок, где клиента ловят через 30 минут после брошенной корзины, это слепая зона: под неё я проектировал отдельный таймлайн."}]]}]]}],["$","$L3a",null,{"narrow":true,"alt":"Анализ конкурентов: как период задают Google Analytics, Mixpanel, Bloomreach, HubSpot, Airbnb и Notion","className":"rounded-[calc(2.4_*_var(--u))] w-full aspect-[1310/766]","src":"/images/cases/mindbox/analysis_competitors.png"}]]}]
+3f:["$","$L3a",null,{"narrow":true,"alt":"Объектная модель: сегмент, событие, условие и действие системы со связями между ними","className":"rounded-[calc(2.4_*_var(--u))] w-full aspect-[1310/733]","src":"/images/cases/mindbox/object_model-v2.png"}]
+40:["$","div",null,{"className":"w-full flex flex-col items-center gap-(--case-gap-media)","children":[["$","div",null,{"className":"case-col flex flex-col gap-(--case-gap-heading)","children":[["$","h4",null,{"className":"case-h-sub","children":"Дерево атрибутов условия"}],["$","p",null,{"className":"case-text","children":"Какой выбор какие поля включает — по нему собрана одна форма с ветвлением вместо десятка экранов."}]]}],["$","$L3a",null,{"narrow":true,"alt":"Дерево атрибутов условия: тип отсчёта, оператор, режим и единица","className":"rounded-[calc(2.4_*_var(--u))] w-full aspect-[1310/766]","src":"/images/cases/mindbox/tree.png"}]]}]
+41:["$","div",null,{"className":"w-full flex flex-col items-center gap-(--case-gap-media)","children":[["$","div",null,{"className":"case-col flex flex-col gap-(--case-gap-heading)","children":[["$","h4",null,{"className":"case-h-sub","children":"User flow"}],["$","p",null,{"className":"case-text","children":"Путь маркетолога по новой структуре — от открытия конструктора до применённого фильтра."}]]}],["$","$L3a",null,{"narrow":true,"alt":"User flow сборки условия в новом конструкторе","className":"rounded-[calc(2.4_*_var(--u))] w-full aspect-[1310/766]","src":"/images/cases/mindbox/user_flow.png"}]]}]
+53:T2dfd,
+
+@keyframes mh-in {
+  from { opacity: 0; translate: 0 1.2rem; }
+  to { opacity: 1; translate: 0 0; }
+}
+[data-hyp-site] .mht-panel {
+  animation: mh-in 0.45s cubic-bezier(0.32, 0.72, 0, 1) both;
+}
+
+@keyframes mh-show {
+  from { opacity: 0; visibility: hidden; }
+  to { opacity: 1; visibility: visible; }
+}
+[data-hyp-site] .mhs {
+  timeline-scope: --mhs-2, --mhs-3, --mhs-4;
+}
+[data-hyp-site] .mhs-step {
+  
+  min-height: calc(56vh / var(--page-zoom, 1));
+  view-timeline-inset: 0% 45%;
+}
+[data-hyp-site] .mhs-step:nth-child(2) { view-timeline-name: --mhs-2; }
+[data-hyp-site] .mhs-step:nth-child(3) { view-timeline-name: --mhs-3; }
+[data-hyp-site] .mhs-step:nth-child(4) { view-timeline-name: --mhs-4; }
+[data-hyp-site] .mhs-step:last-child {
+  
+  min-height: 0;
+  padding-bottom: calc(20vh / var(--page-zoom, 1));
+}
+[data-hyp-site] .mhs-stage {
+  container-type: inline-size;
+}
+[data-hyp-site] .mhs-sticky {
+  
+  top: calc((100vh / var(--page-zoom, 1) - 100cqw * 766 / 1310) / 2);
+}
+[data-hyp-site] .mhs-layer {
+  background: #080a00;
+}
+[data-hyp-site] .mhs-layer:nth-child(n + 2) {
+  animation: mh-show linear both;
+  animation-range: entry 0% entry 30%;
+}
+[data-hyp-site] .mhs-layer:nth-child(2) { animation-timeline: --mhs-2; }
+[data-hyp-site] .mhs-layer:nth-child(3) { animation-timeline: --mhs-3; }
+[data-hyp-site] .mhs-layer:nth-child(4) { animation-timeline: --mhs-4; }
+
+[data-hyp-site] .mhb {
+  background-color: #0c0e05;
+  background-image: radial-gradient(circle, #2b2e22 0.1rem, transparent 0.12rem);
+  background-size: 2.4rem 2.4rem;
+  box-shadow: inset 0 0 0 1px #1f2218;
+}
+[data-hyp-site] .mhb-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--case-gap-section);
+}
+[data-hyp-site] .mhb-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+[data-hyp-site] .mhb-concepts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.6rem 1.2rem;
+  align-content: start;
+}
+@media (min-width: 1025px) {
+  [data-hyp-site] .mhb-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(4, auto);
+    column-gap: 2.4rem;
+    row-gap: 0;
+  }
+  [data-hyp-site] .mhb-col {
+    display: grid;
+    grid-row: span 4;
+    grid-template-rows: subgrid;
+    row-gap: 2.4rem;
+  }
+}
+
+[data-hyp-site] .mhc-img {
+  width: calc(100% / var(--cw)) !important;
+  height: calc(100% / var(--ch)) !important;
+  left: calc(var(--cx) / var(--cw) * -100%) !important;
+  top: calc(var(--cy) / var(--ch) * -100%) !important;
+  max-width: none !important;
+}
+
+[data-hyp-site] .mhw .zoom-frame,
+[data-hyp-site] .mhw .zoom-frame > button {
+  transform: none !important;
+  z-index: auto !important;
+}
+[data-hyp-site] .mhw-now {
+  isolation: isolate;
+}
+
+[data-hyp-site] .mhw-win::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 2px;
+  background: #f2f2f2;
+  box-shadow: 0 0 1.6rem rgba(242, 242, 242, 0.45);
+  pointer-events: none;
+}
+
+@keyframes mhw-win {
+  from { translate: 0 0; }
+  to { translate: -100% 0; }
+}
+@keyframes mhw-was {
+  from { translate: 0 0; }
+  to { translate: 100% 0; }
+}
+@keyframes mhw-now {
+  from { translate: 100% 0; }
+  to { translate: 0 0; }
+}
+@keyframes mhw-fade {
+  from { opacity: 1; visibility: visible; }
+  to { opacity: 0; visibility: hidden; }
+}
+
+@supports (animation-timeline: view()) {
+  [data-hyp-site] .mhw:not([data-timed]) {
+    view-timeline-name: --mhw;
+  }
+  [data-hyp-site] .mhw:not([data-timed]) :is(.mhw-win, .mhw-was, .mhw-now) {
+    animation-timeline: --mhw;
+    animation-range: contain 10% contain 55%;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+  }
+  
+  [data-hyp-site] .mhw:not([data-timed]) .mhw-win { animation-name: mhw-win; }
+  [data-hyp-site] .mhw:not([data-timed]) .mhw-was { animation-name: mhw-was; }
+  
+  
+}
+
+[data-hyp-site] .mhw[data-timed] :is(.mhw-win, .mhw-was) {
+  transition: translate 1.2s cubic-bezier(0.65, 0, 0.35, 1) 0.35s;
+}
+[data-hyp-site] .mhw[data-on] .mhw-win { translate: -100% 0; }
+[data-hyp-site] .mhw[data-on] .mhw-was { translate: 100% 0; }
+
+@keyframes mhz-zoom {
+  from { transform: translate(calc(var(--cx) * 100%), calc(var(--cy) * 100%)) scale(var(--cw), var(--ch)); }
+  to { transform: none; }
+}
+@supports (animation-timeline: view()) {
+}
+
+@media (min-width: 1281px) and (min-height: 740px) {
+  [data-hyp-site] .mhd-card {
+    position: sticky;
+    top: calc(9.6rem + var(--i) * 1.6rem);
+    box-shadow:
+      0 -1px 0 #262626,
+      0 -1.6rem 3.2rem rgba(0, 0, 0, 0.55);
+  }
+}
+
+[data-hyp-site] .cw-frame {
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+[data-hyp-site] .cw .zoom-frame,
+[data-hyp-site] .cw .zoom-frame > button {
+  transform: none !important;
+  z-index: auto !important;
+}
+
+[data-hyp-site] .cw-img {
+  object-fit: cover;
+}
+
+[data-hyp-site] .cw-rail {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+[data-hyp-site] .cw-line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 2px;
+  translate: 50% 0;
+  background: #f2f2f2;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  transition: opacity 0.25s;
+}
+
+[data-hyp-site] .cw[data-drive='var']:not([data-zone='mid']) .cw-line,
+[data-hyp-site] .cw[data-swap='fade'] .cw-line {
+  opacity: 0;
+}
+
+[data-hyp-site] .cw-knob {
+  top: 50%;
+  right: 0;
+  translate: 50% -50%;
+  pointer-events: auto;
+  touch-action: none;
+  cursor: ew-resize;
+}
+
+[data-hyp-site] .cw-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #f2f2f2;
+  opacity: 0;
+  transition: opacity 0.25s;
+  pointer-events: none;
+}
+[data-hyp-site] .cw[data-zone='was'] .cw-mark[data-face='was'],
+[data-hyp-site] .cw[data-zone='now'] .cw-mark[data-face='now'] {
+  opacity: 1;
+}
+
+[data-hyp-site] :is(.cw-if-was, .cw-if-now) {
+  transition: opacity 0.25s;
+}
+[data-hyp-site] .cw[data-drive='var'][data-front='now'] .cw-if-was,
+[data-hyp-site] .cw[data-drive='var'][data-front='was'] .cw-if-now {
+  opacity: 0;
+}
+[data-hyp-site] .cw-seg-pill {
+  transition: translate 0.35s cubic-bezier(0.32, 0.72, 0, 1);
+}
+[data-hyp-site] .cw[data-drive='var'][data-front='now'] .cw-seg-pill {
+  translate: 100% 0;
+}
+
+[data-hyp-site] .cw[data-drive='var'] .cw-seam[data-face='was'] {
+  opacity: clamp(0, (var(--p) - 0.3) * 10, 1);
+}
+[data-hyp-site] .cw[data-drive='var'] .cw-seam[data-face='now'] {
+  opacity: clamp(0, (0.7 - var(--p)) * 10, 1);
+}
+
+[data-hyp-site] .cw[data-drive='var'] :is(.cw-rail, .cw-win) {
+  translate: calc((var(--p) - 1) * (100% + 2px)) 0;
+}
+[data-hyp-site] .cw[data-drive='var'][data-swap='wipe'] .cw-was {
+  translate: calc((1 - var(--p)) * (100% + 2px)) 0;
+}
+[data-hyp-site] .cw[data-drive='var'][data-swap='slide'] .cw-now {
+  translate: calc(var(--p) * 100%) 0;
+}
+[data-hyp-site] .cw[data-drive='var'][data-swap='fade'] .cw-win {
+  translate: none;
+  opacity: var(--p);
+}
+
+[data-hyp-site] .cw[data-drive='var'][data-swap='fade'][data-front='now'] .cw-win {
+  pointer-events: none;
+}
+
+@keyframes cw-shift {
+  from { translate: 0 0; }
+  to { translate: calc(-100% - 2px) 0; }
+}
+@keyframes cw-hold {
+  from { translate: 0 0; }
+  to { translate: calc(100% + 2px) 0; }
+}
+@keyframes cw-enter {
+  from { translate: 100% 0; }
+  to { translate: 0 0; }
+}
+@keyframes cw-fade {
+  from { opacity: 1; visibility: visible; }
+  to { opacity: 0; visibility: hidden; }
+}
+@keyframes cw-edge {
+  from { opacity: 0; }
+  4% { opacity: 1; }
+  96% { opacity: 1; }
+  to { opacity: 0; }
+}
+@keyframes cw-mark-was {
+  from { opacity: 1; }
+  4% { opacity: 0; }
+  to { opacity: 0; }
+}
+@keyframes cw-mark-now {
+  from { opacity: 0; }
+  96% { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes cw-if-was {
+  from { opacity: 1; }
+  48% { opacity: 1; }
+  52% { opacity: 0; }
+  to { opacity: 0; }
+}
+@keyframes cw-if-now {
+  from { opacity: 0; }
+  48% { opacity: 0; }
+  52% { opacity: 1; }
+  to { opacity: 1; }
+}
+@keyframes cw-pill {
+  from { translate: 0 0; }
+  46% { translate: 0 0; }
+  54% { translate: 100% 0; }
+  to { translate: 100% 0; }
+}
+
+@keyframes cw-seam-was {
+  from { opacity: 1; }
+  60% { opacity: 1; }
+  70% { opacity: 0; }
+  to { opacity: 0; }
+}
+@keyframes cw-seam-now {
+  from { opacity: 0; }
+  30% { opacity: 0; }
+  40% { opacity: 1; }
+  to { opacity: 1; }
+}
+
+@supports (animation-timeline: view()) {
+  [data-hyp-site] .cw {
+    timeline-scope: --cw;
+  }
+  [data-hyp-site] .cw-frame {
+    view-timeline-name: --cw;
+  }
+  [data-hyp-site] .cw[data-drive='scroll'] :is(.cw-rail, .cw-win, .cw-was, .cw-now, .cw-line, .cw-mark, .cw-if-was, .cw-if-now, .cw-seg-pill, .cw-seam) {
+    animation-timeline: --cw;
+    animation-range-start: cover var(--r0, 40%);
+    animation-range-end: cover calc(var(--r0, 40%) + 20%);
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+  }
+  
+  
+  [data-hyp-site] .cw[data-fit='fit'][data-drive='scroll'] :is(.cw-rail, .cw-win, .cw-was, .cw-now, .cw-line, .cw-mark, .cw-if-was, .cw-if-now, .cw-seg-pill, .cw-seam),
+  [data-hyp-site] .cw[data-fit='pin'][data-drive='scroll'] :is(.cw-rail, .cw-win, .cw-was, .cw-now, .cw-line, .cw-mark, .cw-if-was, .cw-if-now, .cw-seg-pill, .cw-seam) {
+    animation-range-start: var(--ra, contain calc(50% - min(50%, 20vh / var(--page-zoom, 1))));
+    animation-range-end: var(--rb, contain calc(50% + min(50%, 20vh / var(--page-zoom, 1))));
+  }
+  @media (orientation: landscape) and (min-width: 1025px) {
+    [data-hyp-site] .cw[data-fit='pin'] {
+      --cw-pd: calc(60svh / var(--page-zoom, 1));
+    }
+    [data-hyp-site] .cw[data-fit='pin'] .cw-frame {
+      view-timeline-name: none;
+    }
+    [data-hyp-site] .cw[data-fit='pin'] .cw-pin {
+      view-timeline-name: --cw;
+    }
+    [data-hyp-site] .cw[data-fit='pin'] .cw-pin-run {
+      height: var(--cw-pd);
+    }
+    [data-hyp-site] .cw[data-fit='pin'] .cw-stick {
+      position: sticky;
+      top: calc((100svh / var(--page-zoom, 1) - var(--wh, 0px)) / 2);
+    }
+    [data-hyp-site] .cw[data-fit='pin'][data-drive='scroll'] :is(.cw-rail, .cw-win, .cw-was, .cw-now, .cw-line, .cw-mark, .cw-if-was, .cw-if-now, .cw-seg-pill, .cw-seam) {
+      animation-range-start: var(--ra, cover calc(50% - 0.4 * var(--cw-pd)));
+      animation-range-end: var(--rb, cover calc(50% + 0.4 * var(--cw-pd)));
+    }
+  }
+  [data-hyp-site] .cw[data-drive='scroll'] .cw-rail { animation-name: cw-shift; }
+  [data-hyp-site] .cw[data-drive='scroll'] .cw-mark[data-face='was'] { animation-name: cw-mark-was; }
+  [data-hyp-site] .cw[data-drive='scroll'] .cw-mark[data-face='now'] { animation-name: cw-mark-now; }
+  [data-hyp-site] .cw[data-drive='scroll']:not([data-swap='fade']) .cw-line { animation-name: cw-edge; }
+  [data-hyp-site] .cw[data-drive='scroll'][data-swap='wipe'] .cw-win { animation-name: cw-shift; }
+  [data-hyp-site] .cw[data-drive='scroll'][data-swap='wipe'] .cw-was { animation-name: cw-hold; }
+  [data-hyp-site] .cw[data-drive='scroll'][data-swap='slide'] .cw-win { animation-name: cw-shift; }
+  [data-hyp-site] .cw[data-drive='scroll'][data-swap='slide'] .cw-now { animation-name: cw-enter; }
+  [data-hyp-site] .cw[data-drive='scroll'][data-swap='fade'] .cw-win { animation-name: cw-fade; }
+  [data-hyp-site] .cw[data-drive='scroll'] .cw-if-was { animation-name: cw-if-was; }
+  [data-hyp-site] .cw[data-drive='scroll'] .cw-if-now { animation-name: cw-if-now; }
+  [data-hyp-site] .cw[data-drive='scroll'] .cw-seg-pill { animation-name: cw-pill; }
+  [data-hyp-site] .cw[data-drive='scroll'] .cw-seam[data-face='was'] { animation-name: cw-seam-was; }
+  [data-hyp-site] .cw[data-drive='scroll'] .cw-seam[data-face='now'] { animation-name: cw-seam-now; }
+}
+
+[data-hyp-site] .cw[data-dragging],
+[data-hyp-site] .cw[data-dragging] * {
+  cursor: ew-resize !important;
+}
+
+@media (min-width: 1025px) {
+  [data-hyp-site] .mhm-rail {
+    position: sticky;
+    top: 9.6rem;
+  }
+}
+42:["$","div",null,{"id":"changes","className":"flex flex-col gap-(--case-gap-media) case-group font-[family-name:var(--font-roboto)] scroll-mt-20","children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$53"}}],"$L54","$L55"]}]
+43:["$","div",null,{"id":"tried","className":"flex flex-col gap-(--case-gap-media) case-group font-[family-name:var(--font-roboto)] scroll-mt-20","children":["$","$L56",null,{}]}]
+44:["$","div",null,{"id":"scoping","className":"flex flex-col gap-(--case-gap-heading) max-w-[82rem] w-full font-[family-name:var(--font-roboto)] scroll-mt-20","children":[["$","h3",null,{"className":"case-h-section","children":"MVP и V2"}],["$","p",null,{"className":"case-text","children":"Эти четыре решения и составили MVP. Конструктор выходил вместе с переездом платформы на новую дизайн-систему, и этот релиз сдвигать было нельзя. Поэтому в V2 ушло всё, что растягивало разработку: таймлайн для минут и часов, часовые пояса, фильтр по будням и выходным. В MVP минуты и часы задаются обычными полями."}]]}]
+45:["$","div",null,{"className":"case-col flex flex-col gap-(--case-gap-heading)","children":[["$","h4",null,{"className":"case-h-sub","children":"Сценарии теста"}],["$","p",null,{"className":"case-text","children":"Задачи покрывали все типы периодов: пресеты, отсчёт от «сейчас», календарную неделю и год, точные даты."}]]}]
+46:["$","$L3a",null,{"crop":[1310,766],"alt":"Гипотезы для UX-тестов: сценарии по пресетам, периодам от текущего момента, календарной неделе/году и абсолютному периоду","className":"rounded-[calc(2.4_*_var(--u))] w-full","src":"/images/cases/mindbox/ux-tests.png"}]
+47:["$","div",null,{"className":"w-full flex flex-col items-center gap-(--case-gap-media)","children":[["$","div",null,{"className":"case-col flex flex-col gap-(--case-gap-heading)","children":[["$","h4",null,{"className":"case-h-sub","children":"Что ещё поправил"}],["$","p",null,{"className":"case-text","children":"Кнопку диапазона в поле значения замечали не сразу. Доработал анимацию разворачивания — один пробный клик она всё равно стоит."}]]}],"$undefined"]}]
+48:["$","div",null,{"className":"w-full flex flex-col items-center gap-(--case-gap-media)","children":[["$","div",null,{"className":"case-col flex flex-col gap-(--case-gap-heading)","children":[["$","h4",null,{"className":"case-h-sub","children":"Прототип второй итерации"}],["$","p",null,{"className":"case-text","children":"Финальные решения MVP собраны в один прототип в Figma — на нём прошёл финальный прогон."}]]}],["$","$L3a",null,{"alt":"Прототип второй итерации в Figma: сквозные флоу сценариев теста с разветвлениями и связями между экранами","className":"rounded-[calc(2.4_*_var(--u))] w-full aspect-[1728/1213]","src":"/images/cases/mindbox/usability-iteration.png"}]]}]
+49:["$","div",null,{"id":"handoff","className":"flex flex-col gap-(--case-gap-media) case-group font-[family-name:var(--font-roboto)] scroll-mt-20","children":[["$","div",null,{"className":"case-col flex flex-col gap-(--case-gap-heading)","children":[["$","h3",null,{"className":"case-h-section","children":"Передача в разработку"}],["$","p",null,{"className":"case-text","children":"На выходе — спецификация в Figma: все состояния условия, краевые случаи, проверки ошибок и разворачивание диапазона. Поведение компонентов на каждом экране описал в комментариях к макетам. Конструктор собран из мелких переиспользуемых блоков и ушёл в разработку — на этом моя часть закончилась."}]]}],["$","$L3b",null,{"label":"Показать спецификацию","collapseLabel":"Свернуть спецификацию","className":"w-full flex flex-col items-center gap-(--case-gap-media)","children":[["$","$L3a",null,{"alt":"Спецификация в Figma: флоу состояний условия и разворачивание диапазона","className":"rounded-[calc(2.4_*_var(--u))] w-full aspect-[1310/766]","src":"/images/cases/mindbox/all-screens.png"}],["$","$L3a",null,{"alt":"Финальные экраны: три сквозных сценария сборки условия от открытия конструктора до применённого фильтра","className":"rounded-[calc(2.4_*_var(--u))] w-full aspect-[1310/766]","src":"/images/cases/mindbox/all-screens-zoom.png"}]]}]]}]
+4d:["$","$L57",null,{"href":"/cases/citilink","title":"Ситилинк"}]
+58:I[6111,["628","$23","159","$4","745","$24","442","$25"],"default"]
+59:I[3681,["628","$23","159","$4","745","$24","442","$25"],"default"]
+51:["$","div",null,{"className":"w-full flex flex-col items-center gap-(--case-gap-media)","children":[["$","div",null,{"className":"case-col flex flex-col gap-(--case-gap-heading)","children":[["$","h4",null,{"className":"case-h-sub","children":"Как маркетологи называют условия"}],["$","p",null,{"className":"case-text","children":"Из тикетов и записей я выписал слова, которыми маркетологи сами называют условия, — из них собраны новые названия."}]]}],["$","$L3a",null,{"narrow":true,"alt":"Карта потенциального нейминга условий, сгруппированная по операторам и табам","className":"rounded-[calc(2.4_*_var(--u))] w-full aspect-[1310/766]","src":"/images/cases/mindbox/naming.png"}]]}]
+52:["$","div",null,{"className":"w-full flex flex-col items-center gap-(--case-gap-media)","children":[["$","div",null,{"className":"case-col flex flex-col gap-(--case-gap-heading)","children":[["$","h4",null,{"className":"case-h-sub","children":"Какими условиями пользуются"}],["$","ul",null,{"className":"case-text list-disc ml-6 flex flex-col gap-(--case-gap-list)","children":[["$","li",null,{"children":[["$","strong",null,{"className":"font-semibold text-[#e6e6e6]","children":"72,5%"}]," использований — четыре почти одинаковых по смыслу фильтра в двух конструкторах: «наступила» и три режима «Периода от текущей даты»."]}],["$","li",null,{"children":[["$","strong",null,{"className":"font-semibold text-[#e6e6e6]","children":"22,8%"}]," — «в диапазоне»."]}],["$","li",null,{"children":["Редкие условия вместе — меньше ",["$","strong",null,{"className":"font-semibold text-[#e6e6e6]","children":"4%"}],": календарные фильтры 3,6%, годовщины 0,15%, отрицание 0,09%."]}]]}]]}],["$","$L3a",null,{"narrow":true,"alt":"Выгрузка частоты использования фильтров — значения скрыты по условиям NDA","className":"rounded-[calc(2.4_*_var(--u))] w-full aspect-[1320/1258]","src":"/images/cases/mindbox/metrics.png","caption":"Абсолютные значения скрыты по условиям NDA — в тексте только доли"}]]}]
+54:["$","$L58",null,{}]
+55:["$","$L59",null,{}]
+1b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+5a:I[6869,[],"IconMark"]
+1f:[["$","title","0",{"children":"Конструктор условий Mindbox: от логики БД к ментальной модели"}],["$","meta","1",{"name":"description","content":"На юзабилити-тестах сложный сегмент собрали 5 из 5 против 2 из 5 на старом интерфейсе. Десять технических операторов свёл к пяти — на языке маркетолога."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","meta","3",{"name":"google-site-verification","content":"XM56tkXGJuTj2uECBx9fz_101BUZbZKKqam38nk7uIU"}],["$","meta","4",{"property":"og:title","content":"Конструктор условий Mindbox: от логики БД к ментальной модели"}],["$","meta","5",{"property":"og:description","content":"На юзабилити-тестах сложный сегмент собрали 5 из 5 против 2 из 5 на старом интерфейсе. Десять технических операторов свёл к пяти — на языке маркетолога."}],["$","meta","6",{"property":"og:url","content":"https://stage.timlatypov.ru/cases/mindbox/"}],["$","meta","7",{"property":"og:site_name","content":"Тимур Латыпов"}],["$","meta","8",{"property":"og:locale","content":"und"}],["$","meta","9",{"property":"og:image","content":"https://stage.timlatypov.ru/images/og-cover.jpg"}],["$","meta","10",{"property":"og:image:width","content":"1200"}],["$","meta","11",{"property":"og:image:height","content":"630"}],["$","meta","12",{"property":"og:image:alt","content":"Финальный конструктор условий Mindbox"}],["$","meta","13",{"property":"og:type","content":"article"}],["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","15",{"name":"twitter:title","content":"Конструктор условий Mindbox: от логики БД к ментальной модели"}],["$","meta","16",{"name":"twitter:description","content":"На юзабилити-тестах сложный сегмент собрали 5 из 5 против 2 из 5 на старом интерфейсе. Десять технических операторов свёл к пяти — на языке маркетолога."}],["$","meta","17",{"name":"twitter:image","content":"https://stage.timlatypov.ru/images/og-cover.jpg"}],["$","link","18",{"rel":"icon","href":"/favicon.ico?dacaa60d5f2a5cfa","type":"image/x-icon","sizes":"16x16"}],["$","link","19",{"rel":"icon","href":"/icon.svg?08727a46246cafeb","type":"image/svg+xml","sizes":"any"}],["$","link","20",{"rel":"apple-touch-icon","href":"/apple-icon.png?95506372cbcbedf9","type":"image/png","sizes":"180x180"}],["$","$L5a","21",{}]]
+4f:null
